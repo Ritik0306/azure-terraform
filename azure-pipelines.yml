@@ -22,16 +22,20 @@ steps:
 - task: CmdLine@2
   displayName: az login
   inputs:
-    script: 'az login --service-principal --username "2a772d7d-c69a-4450-a7ad-a80e3a41b1e7" --password "7Nw8Q~yhCRNUwfiw5QWb0d4SPWRSjeJwYu1ZFaEf" --tenant "540f532a-c53d-4daf-b68d-3dbb0bf536ce" '
+    script: 'az login'
 
 - task: TerraformInstaller@1
   inputs:
     terraformVersion: 'latest'
+  displayName: terraform install
 
 - script: |
     terraform init
-    # terraform plan -out=terraform.tfplan
-  displayName: 'Terraform Plan'
+  displayName: 'Terraform initialization'
+
+- script: |
+    terraform plan
+  displayName: 'Terraform plan'
 
 # - script: |
 #     terraform apply $(Pipeline.Workspace)/terraform.tfplan

@@ -19,10 +19,10 @@ steps:
   inputs:
     script: 'curl -sL https://aka.ms/InstallAzureCLIDeb'
 
-# - task: CmdLine@2
-#   displayName: az login
-#   inputs:
-#     script: 'az login --service-principal --username "2b6a2482-3a5f-4d7a-a6ac-35b6ceaad3be" --password ".0L8Q~HYsFOKj~GRH.wm6U9MCDwSwDdREVifwcAp" --tenant "540f532a-c53d-4daf-b68d-3dbb0bf536ce"  && az account set --subscription f8231c19-9560-40d1-a65d-a0618d065526 '
+- task: CmdLine@2
+  displayName: az login
+  inputs:
+    script: 'az login --service-principal --username "2b6a2482-3a5f-4d7a-a6ac-35b6ceaad3be" --password ".0L8Q~HYsFOKj~GRH.wm6U9MCDwSwDdREVifwcAp" --tenant "540f532a-c53d-4daf-b68d-3dbb0bf536ce"  && az account set --subscription f8231c19-9560-40d1-a65d-a0618d065526 '
 
 - task: TerraformInstaller@1
   inputs:

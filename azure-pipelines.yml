@@ -36,7 +36,7 @@ steps:
 
 - script: |
     terraform validate
-    terraform plan
+    terraform plan -lock=false
   displayName: 'Terraform plan'
 
 # - script: |

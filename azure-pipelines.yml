@@ -34,9 +34,9 @@ steps:
     terraform init
   displayName: 'Terraform initialization'
 
-- script: |
-    terraform plan -lock=false
-  displayName: 'Terraform plan'
+# - script: |
+#     terraform plan
+#   displayName: 'Terraform plan'
 
 - script: |
     terraform apply 

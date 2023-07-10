@@ -23,7 +23,7 @@ steps:
 - task: CmdLine@2
   displayName: az login
   inputs:
-    script: 'az login --az login --service-principal -u 3a6682f8-d121-42ad-9cf6-bed4093a5785 -p 8cF8Q~y323yXVgFjRt3ZhvBz7OEHDJyjCPEvXc5H --tenant 661531e5-7111-438e-9d28-7a630db4c065'
+    script: 'az login --service-principal -u 3a6682f8-d121-42ad-9cf6-bed4093a5785 -p 8cF8Q~y323yXVgFjRt3ZhvBz7OEHDJyjCPEvXc5H --tenant 661531e5-7111-438e-9d28-7a630db4c065'
 
 - task: TerraformInstaller@1
   inputs:

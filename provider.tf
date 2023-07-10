@@ -6,16 +6,16 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name = "terraform-poc"
-    storage_account_name = "terraformpocritiktest"
-    container_name = "terraform-demo-container"
+    resource_group_name = "terrform-test-pipeline"
+    storage_account_name = "rtcterraformpoc"
+    container_name = "terrraformpoc"
     key = "terraform.tfstate"
   }
 }
 
 provider "azurerm" {
-  subscription_id = "f8231c19-9560-40d1-a65d-a0618d065526"
-  tenant_id = "540f532a-c53d-4daf-b68d-3dbb0bf536ce"
+  subscription_id = "6fe625c6-7a10-4efa-bc4e-5ecc0d6e0a06"
+  tenant_id = "661531e5-7111-438e-9d28-7a630db4c065"
   features {
   }
 }

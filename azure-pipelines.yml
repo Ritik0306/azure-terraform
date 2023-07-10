@@ -38,6 +38,6 @@ steps:
     terraform plan -lock=false
   displayName: 'Terraform plan'
 
-# - script: |
-#     terraform apply $(Pipeline.Workspace)/terraform.tfplan
-#   displayName: 'Terraform Apply'
+- script: |
+    terraform apply 
+  displayName: 'Terraform Apply'

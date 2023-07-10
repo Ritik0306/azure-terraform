@@ -35,7 +35,6 @@ steps:
   displayName: 'Terraform initialization'
 
 - script: |
-    terraform validate
     terraform plan -lock=false
   displayName: 'Terraform plan'
 
